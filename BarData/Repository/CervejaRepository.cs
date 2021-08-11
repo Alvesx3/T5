@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BarData.Repository
 {
-    class CervejaRepository : BaseRepository<Cerveja>
+    public class CervejaRepository : BaseRepository<Cerveja>
     {
     }
 }

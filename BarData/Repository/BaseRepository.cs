@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace BarData.Repository
 {
-    class BaseRepository<T> where T : BaseModel
+    public class BaseRepository<T> where T : BaseModel
     {
         public void Create(T model)
         {
             using (var context = new BarContext())
             {
                 context.Set<T>().Add(model);
+                context.SaveChanges();
             }
         }
         public List<T> Read()
@@ -22,7 +23,7 @@ namespace BarData.Repository
             List<T> list = new List<T>();
             using (var context = new BarContext())
             {
-                list.Add(context.Set<T>().Find());
+                list = context.Set<T>().ToList();
             }
             return list;
         }
@@ -40,6 +41,7 @@ namespace BarData.Repository
             using (var context = new BarContext())
             {
                 context.Entry<T>(this.Read(id)).State = System.Data.Entity.EntityState.Deleted;
+                context.SaveChanges();
             }
         }
         public void Edit(T model)
@@ -47,6 +49,7 @@ namespace BarData.Repository
             using (var context = new BarContext())
             {
                 context.Entry<T>(model).State = System.Data.Entity.EntityState.Modified;
+                context.SaveChanges();
             }
         }
 
