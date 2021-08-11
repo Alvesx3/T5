@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsT5", "WindowsFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarData", "..\BarData\BarData.csproj", "{166C5F4D-64F7-4DF2-A037-7A7E234B8065}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvcBar", "..\WebMvcBar\WebMvcBar.csproj", "{1790EA90-2F28-4135-94D1-BF868E38A176}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{166C5F4D-64F7-4DF2-A037-7A7E234B8065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{166C5F4D-64F7-4DF2-A037-7A7E234B8065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{166C5F4D-64F7-4DF2-A037-7A7E234B8065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1790EA90-2F28-4135-94D1-BF868E38A176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1790EA90-2F28-4135-94D1-BF868E38A176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1790EA90-2F28-4135-94D1-BF868E38A176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1790EA90-2F28-4135-94D1-BF868E38A176}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
