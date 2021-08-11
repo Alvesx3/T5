@@ -56,6 +56,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BarDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarDbDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Cerveja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +86,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabelaCerveja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelaCerveja.Designer.cs">
+      <DependentUpon>TabelaCerveja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabelaRefrigerante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelaRefrigerante.Designer.cs">
+      <DependentUpon>TabelaRefrigerante.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cerveja.resx">
       <DependentUpon>Cerveja.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +117,34 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TabelaCerveja.resx">
+      <DependentUpon>TabelaCerveja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabelaRefrigerante.resx">
+      <DependentUpon>TabelaRefrigerante.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BarDbDataSet.xsc">
+      <DependentUpon>BarDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BarDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarDbDataSet.xss">
+      <DependentUpon>BarDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BarDbDataSet1.xsc">
+      <DependentUpon>BarDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BarDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarDbDataSet1.xss">
+      <DependentUpon>BarDbDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,6 +164,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bottle-152915_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BarData\BarData.csproj">
+      <Project>{166c5f4d-64f7-4df2-a037-7a7e234b8065}</Project>
+      <Name>BarData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
