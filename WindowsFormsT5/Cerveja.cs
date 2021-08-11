@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsT5
 {
-    public partial class Form1 : Form
+    public partial class Cerveja : Form
     {
-        public Form1()
+        public Cerveja()
         {
             InitializeComponent();
+        }
+
+        private void ButListar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButSalvar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
