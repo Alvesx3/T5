@@ -31,8 +31,8 @@ namespace WindowsFormsT5
         {
             this.ButListar = new System.Windows.Forms.Button();
             this.ButSalvar = new System.Windows.Forms.Button();
-            this.TxbTipo = new System.Windows.Forms.TextBox();
-            this.labSabor = new System.Windows.Forms.Label();
+            this.TxbEstilo = new System.Windows.Forms.TextBox();
+            this.labEstiloC = new System.Windows.Forms.Label();
             this.TxbMarca = new System.Windows.Forms.TextBox();
             this.labMarca = new System.Windows.Forms.Label();
             this.TxBNome = new System.Windows.Forms.TextBox();
@@ -60,21 +60,21 @@ namespace WindowsFormsT5
             this.ButSalvar.UseVisualStyleBackColor = true;
             this.ButSalvar.Click += new System.EventHandler(this.ButSalvar_Click);
             // 
-            // TxbTipo
+            // TxbEstilo
             // 
-            this.TxbTipo.Location = new System.Drawing.Point(66, 128);
-            this.TxbTipo.Name = "TxbTipo";
-            this.TxbTipo.Size = new System.Drawing.Size(199, 20);
-            this.TxbTipo.TabIndex = 15;
+            this.TxbEstilo.Location = new System.Drawing.Point(66, 128);
+            this.TxbEstilo.Name = "TxbEstilo";
+            this.TxbEstilo.Size = new System.Drawing.Size(199, 20);
+            this.TxbEstilo.TabIndex = 15;
             // 
-            // labSabor
+            // labEstiloC
             // 
-            this.labSabor.AutoSize = true;
-            this.labSabor.Location = new System.Drawing.Point(19, 128);
-            this.labSabor.Name = "labSabor";
-            this.labSabor.Size = new System.Drawing.Size(34, 13);
-            this.labSabor.TabIndex = 14;
-            this.labSabor.Text = "Tipo :";
+            this.labEstiloC.AutoSize = true;
+            this.labEstiloC.Location = new System.Drawing.Point(19, 128);
+            this.labEstiloC.Name = "labEstiloC";
+            this.labEstiloC.Size = new System.Drawing.Size(38, 13);
+            this.labEstiloC.TabIndex = 14;
+            this.labEstiloC.Text = "Estilo :";
             // 
             // TxbMarca
             // 
@@ -124,8 +124,8 @@ namespace WindowsFormsT5
             this.ClientSize = new System.Drawing.Size(295, 207);
             this.Controls.Add(this.ButListar);
             this.Controls.Add(this.ButSalvar);
-            this.Controls.Add(this.TxbTipo);
-            this.Controls.Add(this.labSabor);
+            this.Controls.Add(this.TxbEstilo);
+            this.Controls.Add(this.labEstiloC);
             this.Controls.Add(this.TxbMarca);
             this.Controls.Add(this.labMarca);
             this.Controls.Add(this.TxBNome);
@@ -142,8 +142,8 @@ namespace WindowsFormsT5
 
         private System.Windows.Forms.Button ButListar;
         private System.Windows.Forms.Button ButSalvar;
-        private System.Windows.Forms.TextBox TxbTipo;
-        private System.Windows.Forms.Label labSabor;
+        private System.Windows.Forms.TextBox TxbEstilo;
+        private System.Windows.Forms.Label labEstiloC;
         private System.Windows.Forms.TextBox TxbMarca;
         private System.Windows.Forms.Label labMarca;
         private System.Windows.Forms.TextBox TxBNome;
